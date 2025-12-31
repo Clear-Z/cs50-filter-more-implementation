@@ -28,7 +28,6 @@ int weight = radius - (dist_x + dist_y);
 2. Full Boundary Handling (全边界处理)
 Implemented a robust system to handle image edges and corners without segmentation faults, ensuring every pixel is processed correctly regardless of the kernel size. 实现了一套健壮的边界处理系统，无论卷积核大小如何，都能确保图像边缘和角落的像素被正确处理，杜绝内存越界错误。
 
-Dev Log: The Intersection of Art and Code
+#Dev Log: The Intersection of Art and Code
 From Photoshop to C: Re-imagining Image Processing (从 PS 到 C：重构图像处理的认知)
 edges的代码依旧是保持了可调节半径的想法，坚持用硬逻辑写完了soble取值。这1段处理图像的知识与我自己的设计经验交叉结合，算是用代码视角重新了解了1遍计算机是如何达成软件里的操作效果，利用视觉知识积累的直觉和ai讨论了不少映射到计算机或数学的同领域知识。 ai用absolute value函数简化了1下我用if手写的取值代码，补充了1点数学知识。感觉这种交叉到自己熟悉领域的部分是很建立自信心的1课。
-
